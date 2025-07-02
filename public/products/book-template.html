@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="book-info"> <!-- Book info will be loaded here -->
+        </div>
+        <h2>Purchase Form</h2>
+        <form id="purchaseForm" data-product-id="${product._id}" data-product-price="${product.price}">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+            </div>
+            <div class="form-group">
+                <label>Total Amount:</label>
+                <span id="totalAmount">$0.00</span>
+            </div>
+            <button type="submit" class="btn btn-primary">Purchase Now</button>
+        </form>
+
+
+        <div id="reviewsContainer">
+            <!-- Existing reviews will be displayed here -->
+        </div>
+        <h2>Submit Your Review</h2>
+        <form id="reviewForm" onsubmit="event.preventDefault(); return false;">
+            <label for="reviewText">Your Review:</label><br>
+            <textarea id="reviewText" name="review" required></textarea><br>
+            <input type="submit" value="Submit Review">
+        </form>
+    </div>
+    <script src="book-details.js"></script>
+</body>
+
+</html>
