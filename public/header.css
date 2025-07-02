@@ -1,0 +1,84 @@
+.header {
+    font-family : myFirstFont;
+    position: sticky;
+    display:  flex;
+    justify-content: space-between;
+    top: 0px;
+    padding: 5px 16px;
+    background: #FFB8E0;
+    color: #2a1f25;
+    height: 80px;
+    z-index: 1000;
+    
+
+  }
+.left, .middle, .right{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.left{
+
+    margin-left: 15px;
+}
+.middle{
+    justify-content: center;
+    gap: 10px;
+}
+.right{
+    justify-content: right;
+
+    gap: 10px;
+}
+
+#cartbutton{
+   width: 45px;
+   height: 45px;
+   background: url(images/shopping-cart.png) no-repeat center;
+   background-size: 35px 35px;
+   border: none;
+   background-position: center;
+}
+#cartbutton:hover{
+    background-color: #EC7FA9;
+}
+
+.custombutton{
+    font-family : myFirstFont;
+    font-weight: 480;
+    background-color: #FFEDFA;
+    border : .125em solid #EC7FA9;
+
+    transition: background-color 0.4s ease-in-out;
+
+    padding-top: 2px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+    font-size: 22px;
+    border-radius: 20px;
+    text-align: center;
+    display: inline-block;
+
+}
+.custombutton:hover{
+    background-color: #EC7FA9;
+}
+body{
+    font-family : myFirstFont;
+    background-color: #FFEDFA;
+    margin: 0px;
+
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(fonts/Quicksand.ttf);
+
+}

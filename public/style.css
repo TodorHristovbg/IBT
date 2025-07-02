@@ -1,0 +1,139 @@
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(fonts/Quicksand.ttf);
+
+}
+
+
+h2{
+    margin: 20px;
+    font-size: 60px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #EC7FA9;
+    text-decoration-style: solid;
+    text-underline-offset: 5px;
+
+}
+
+#homepagecake{
+  
+    width: 330px;
+    border-radius: 80px;
+}
+.introduction{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin: 120px;
+    margin-top: 0px;
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.6s ease-in-out;
+    border-radius: 80px;
+    padding: 20px;
+   
+}
+.item p{
+    text-align: center;
+    font-size: 38px;
+    
+}
+.item:hover{
+    background-color: var(--hover-color)
+}
+.orange{
+    --hover-color:hsl(26, 86%, 59%);
+}
+.vanilla{
+    --hover-color:#F3E5AB;
+}
+.brownish{
+    --hover-color:#ffbd78;
+}
+.heroimage{
+    margin: 0;
+    padding: 0;
+    height: calc(100vh - 80px);
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
+                url('images/heroimage.jpg') no-repeat center center;
+    background-size: cover;
+
+}
+.hero-text {
+    position: absolute;
+    top: 50%;   
+    left: 30%;  
+    transform: translate(-50%, -50%);  
+    color: white;  
+    text-align: center; 
+    font-size: 30px;
+
+}
+.hero-text button{
+    font-size: 30px;
+}
+.titles{
+    font-weight: bold;
+    font-size: 50px;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.description button{
+  font-size: 35px;
+  margin-bottom: 40px;
+}
+
+
+
+
+.h1{
+    margin: 50px;
+}
+
+
+
+.Menu{
+ display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 70px;
+  padding: 0px;
+  margin-left: 50px;
+   margin-right: 50px;
+  
+}
+.product {
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3e5ab;
+
+    border : .175em solid #EC7FA9;
+    border-radius: 30px;
+
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+.menuimage{
+    width: 200px;
+}
+.menutitle{
+    font-weight: bold;
+    font-size: 25;
+}
+.menudesc{
+    font-size: 22;
+}
+
